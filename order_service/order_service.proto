@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package order_service;
+option go_package="genproto/order_service";
+import "google/protobuf/empty.proto";
+import "order.proto";
+
+service OrderService{
+    rpc Create(CreateOrderRequest)returns(Order);
+    rpc GetById(OrderPKey) returns(User);
+    rpc GetAll(GetAllOrdersRequest) returns(GetAllOrdersResponse);
+    rpc Delete(OrderPKey)returns(google.protobuf.Empty);
+    rpc Update(OrderPKey) returns(google.protobuf.Empty);
+}
