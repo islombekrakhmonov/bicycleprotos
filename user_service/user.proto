@@ -32,3 +32,10 @@ message GetAllUsersResponse{
     int64 count =2;
 }
 
+message GetUserByPhoneRequest{
+    string phone_number=1;
+}
+
+message GetUserByPhoneResponse{
+    bool check=1;
+}

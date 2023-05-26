@@ -11,4 +11,5 @@ service UserService{
     rpc GetAll(GetAllUsersRequest) returns(GetAllUsersResponse);
     rpc Delete(UserPKey)returns(google.protobuf.Empty);
     rpc Update(UserPKey) returns(google.protobuf.Empty);  
+    rpc GetByPhone(GetUserByPhoneRequest)returns(GetUserByPhoneResponse);
 }
