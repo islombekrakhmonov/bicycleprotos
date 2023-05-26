@@ -8,6 +8,9 @@ message Order{
     string userID = 2;
     string productID = 3;
     int64 totalSum = 4; 
+    string user_first_name = 5;
+    string user_last_name = 6;
+    string user_phone_number = 7;
 }
 
 message OrderPKey {
