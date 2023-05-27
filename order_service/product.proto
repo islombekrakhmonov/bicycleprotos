@@ -9,6 +9,11 @@ message Product {
     int32 price = 3;
 }
 
+message UpdateProduct{
+    string name = 1;
+    int32 price = 2;
+}
+
 message ProductPKey {
     string id = 1;
 }
@@ -18,12 +23,12 @@ message CreateProductRequest {
     int32 price = 2;
 }
 
-message GetProductListRequest {
+message GetAllProductsRequest {
     int32 offset = 1;
     int32 limit = 2;
 }
 
-message GetProductListResponse {
+message GetAllProductdResponse {
     repeated Product products = 1;
     int32 total = 2;
 }
