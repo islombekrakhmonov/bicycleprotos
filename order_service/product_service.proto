@@ -8,7 +8,7 @@ import "google/protobuf/empty.proto";
 service ProductService{
     rpc Create(CreateProductRequest)returns(Product);
     rpc GetById(ProductPKey) returns(Product);
-    rpc GetAll(GetAllProductRequest) returns(GetAllProductResponse);
+    rpc GetAll(GetAllProductsRequest) returns(GetAllProductsResponse);
     rpc Delete(ProductPKey)returns(google.protobuf.Empty);
     rpc Update(UpdateProduct) returns(google.protobuf.Empty);
 }
