@@ -13,6 +13,19 @@ message Order{
     string user_phone_number = 7;
 }
 
+message UpdateOrderRequest{
+    string userID = 2;
+    string productID = 3;
+    int64 totalSum = 4; 
+}
+
+message UpdateOrderResponse{
+    string id = 1;
+    string userID = 2;
+    string productID = 3;
+    int64 totalSum = 4; 
+}
+
 message OrderPKey {
     string id = 1;
 }
