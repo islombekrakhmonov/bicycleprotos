@@ -2,7 +2,6 @@ syntax="proto3";
 
 package order_service;
 option go_package="genproto/order_service";
-import "user_service/user.proto";
 
 
 message Order{
@@ -10,10 +9,11 @@ message Order{
     string userID = 2;
     string productID = 3;
     int64 totalSum = 4; 
-    repeated User user = 5;
-    // string user_first_name = 5;
-    // string user_last_name = 6;
-    // string user_phone_number = 7;
+    string user_first_name = 5;
+    string user_last_name = 6;
+    string user_phone_number = 7;
+    string product_name = 8;
+    string product_price = 9;
 }
 
 message UpdateOrderRequest{
