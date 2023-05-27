@@ -10,5 +10,5 @@ service OrderService{
     rpc GetById(OrderPKey) returns(Order);
     rpc GetAll(GetAllOrdersRequest) returns(GetAllOrdersResponse);
     rpc Delete(OrderPKey)returns(google.protobuf.Empty);
-    rpc Update(OrderPKey) returns(google.protobuf.Empty);
+    rpc Update(UpdateOrderRequest) returns(google.protobuf.Empty);
 }
