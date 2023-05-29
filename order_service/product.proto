@@ -21,7 +21,7 @@ message ProductPKey {
 
 message CreateProductRequest {
     string name = 1;
-    int32 price = 2;
+    int64 price = 2;
 }
 
 message GetAllProductsRequest {
