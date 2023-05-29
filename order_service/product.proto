@@ -10,8 +10,9 @@ message Product {
 }
 
 message UpdateProduct{
-    string name = 1;
-    int32 price = 2;
+    string id = 1;
+    string name = 2;
+    int32 price = 3;
 }
 
 message ProductPKey {
